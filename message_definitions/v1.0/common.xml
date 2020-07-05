@@ -6797,5 +6797,16 @@
       <field type="uint8_t" name="msg_pack_size">Number of encoded messages in the pack (not the number of bytes). Allowed range is 1 - 10.</field>
       <field type="uint8_t[250]" name="messages">Concatenation of encoded OpenDroneID messages. Shall be filled with nulls in the unused portion of the field.</field>
     </message>
+    <message id="20001" name="ACTUATOR_CMD">
+        <description>Control the actuators</description>
+        <field type="uint16_t" name="actuator1">Value for servo Nr 1</field>
+        <field type="uint16_t" name="actuator2">Value for servo Nr 2</field>
+        <field type="uint16_t" name="actuator3">Value for servo Nr 3</field>
+        <field type="uint16_t" name="actuator4">Value for servo Nr 4</field>
+        <field type="uint16_t" name="actuator5">Value for servo Nr 5</field>
+        <field type="uint16_t" name="actuator6">Value for servo Nr 6</field>
+        <field type="uint16_t" name="actuator7">Value for servo Nr 7</field>
+        <field type="uint16_t" name="actuator8">Value for servo Nr 8</field>
+      </message>
   </messages>
 </mavlink>
